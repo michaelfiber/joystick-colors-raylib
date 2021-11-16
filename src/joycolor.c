@@ -30,6 +30,8 @@ int main(void)
 
   while (!WindowShouldClose())
   {
+    PollInputEvents();
+    
     for (int i = 0; i < 4; i++)
     {
       if (IsGamepadAvailable(i))
